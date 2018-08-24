@@ -109,7 +109,7 @@ public class ParkingUtilityTest {
 		parkingUtility.findSlotByRegistrationNum(parkingFloor, car);
 	}
 	
-	/*@Test
+	@Test
 	public void park() {
 		
 		parkingUtility = new ParkingUtility();
@@ -123,7 +123,7 @@ public class ParkingUtilityTest {
 		// Test 1 - createParkingLot function not called
 		Assert.assertEquals(parkingFloor.size(), 0);
 
-		parkingUtility.createParkingLot(6);
+		parkingUtility.createParkingLot(5);
 
 		Car car1 = new Car("1-TEST-1111", "yellow");
 		parkingUtility.park(parkingFloor, car1);
@@ -131,14 +131,14 @@ public class ParkingUtilityTest {
 		// Test 2 - park called once
 		Assert.assertEquals(parkingFloor.size(), 1);
 
-		Car car2 = new Car("2-TEST-2222", "red");
+		Car car2 = new Car("1-TEST-1111", "yellow");
 		parkingUtility.park(parkingFloor, car2);
 
 		Car car3 = new Car("3-TEST-3333", "white");
 		parkingUtility.park(parkingFloor, car3);
 
 		// Test 3 - park called 3, , expected size should be 3
-		Assert.assertEquals(parkingFloor.size(), 3);
-	}*/
+		Assert.assertEquals(parkingFloor.size(), 2);
+	}
 
 }

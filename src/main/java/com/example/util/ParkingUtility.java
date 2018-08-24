@@ -34,15 +34,14 @@ public class ParkingUtility implements IParkingUtility {
 	 */
 	@Override
 	public synchronized void park(Map<Integer, Car> parkingFloor, Car car) {
-
-		int slotNumber = generateSlotNumber(parkingFloor);
-		if (slotNumber != 0) {
-
-			parkingFloor.put(slotNumber, car);
-			System.out.format(UtilityConstant.ALLOCATED_SLOT_NUM_MSG,
-					String.valueOf(slotNumber));
+		if (!parkingFloor.containsValue(car)) {
+			int slotNumber = generateSlotNumber(parkingFloor);
+			if (slotNumber != 0) {
+				parkingFloor.put(slotNumber, car);
+				System.out.format(UtilityConstant.ALLOCATED_SLOT_NUM_MSG,
+						String.valueOf(slotNumber));
+			}
 		}
-
 	}
 
 	/**

@@ -5,12 +5,16 @@ park KA-01-BB-0001 Black
 park KA-01-HH-7777 Red
 park KA-01-HH-2701 Blue
 park KA-01-HH-3141 Black
+park KA-01-HH-2701 Blue
+status
 leave 4
 status
 park KA-01-P-333 White
 park DL-12-AA-9999 White
 XYZ
 status
+leave 10
+leave 8
 registration_numbers_for_cars_with_colour White
 slot_numbers_for_cars_with_colour White
 slot_number_for_registration_number KA-01-HH-3141
