@@ -22,5 +22,7 @@ public interface IParkingUtility {
 
 	public void findSlotByRegistrationNum(Map<Integer, Car> parkingFloor,
 			Car car3);
+	
+	public void invalidCommand(String command);
 
 }

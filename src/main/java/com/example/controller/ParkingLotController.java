@@ -27,11 +27,9 @@ public class ParkingLotController {
 	 */
 	public void readProcessUsrInptByFileOrIO(BufferedReader br, String fileName) {
 
-		// write code for if br is null;
 		String commandLine = null;
-		// 1.1 Initialize parking floor variable		
 
-		// 5. User input reading logic
+		//1. User input reading logic
 		try {
 			while ((commandLine = br.readLine()) != null) {
 				if (commandLine.equalsIgnoreCase(UtilityConstant.PROGRAM_EXIT))
@@ -43,7 +41,7 @@ public class ParkingLotController {
 					System.out.print(UtilityConstant.ASK_FOR_INPUT_MSG);
 			}
 
-			// 6. close buffered reader
+			// 2. close buffered reader
 			br.close();
 
 		} catch (IOException e1) {

@@ -31,4 +31,5 @@ public class UtilityConstant {
 	public static final String NOT_FOUND_MSG = "Not found";
 	public static final String STATUS_HEADING = "Slot No.	Registration No.	Colour \n";
 	public static final String INPUT_FILE_PATH = "D:\\";
+	public static final String INVALID_INPUT_COMMAND = "Invalid input command.";
 }
