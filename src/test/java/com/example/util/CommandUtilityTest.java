@@ -19,6 +19,9 @@ public class CommandUtilityTest {
 	
 	@Test
 	public void processCommandLineTest(){
+
+		commandUtility = new CommandUtility();
+		
 		String commandLine = "park KA-01-HH-1234 White";
 		Command c1 = commandUtility.processCommandLine(commandLine);
 
@@ -34,6 +37,8 @@ public class CommandUtilityTest {
 		Assert.assertEquals(c2.getCommand(), "create_parking_lot");
 		//Test argument 1
 		Assert.assertEquals(c2.getArg1(), "8");
+		
+		//System.out.println("This is test707 ");
 		
 		
 		

@@ -209,9 +209,8 @@ public class ParkingUtility implements IParkingUtility {
 
 		if (fileName != null && fileName.length() > 0) {
 			try {
-				ClassLoader classLoader = getClass().getClassLoader();
-				fileReader = new FileReader(classLoader.getResource(fileName)
-						.getFile());
+				//ClassLoader classLoader = getClass().getClassLoader();
+				fileReader = new FileReader(fileName);
 			} catch (FileNotFoundException e1) {
 				e1.printStackTrace();
 				return null;

@@ -1,15 +1,16 @@
 package com.example.parkinglot;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+import org.springframework.test.context.ContextConfiguration;
 
-@RunWith(SpringRunner.class)
+import com.example.util.CommandUtilityTest;
+import com.example.util.ParkingUtilityTest;
+
+@RunWith(Suite.class)
+@SuiteClasses({ParkingUtilityTest.class, CommandUtilityTest.class})
+@ContextConfiguration(classes = {ParkingLotApplication.class})
 public class ParkingLotApplicationTests {
-
-	@Test
-	public void contextLoads() {
-		
-	}
 
 }
